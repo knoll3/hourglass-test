@@ -1,1 +1,4 @@
-console.log('Hello TypeScript with ts-node');
+import { TakerAuth, TakerProvider } from "@hourglass/sdk";
+
+const takerProvider = new TakerProvider();
+console.log(takerProvider);
