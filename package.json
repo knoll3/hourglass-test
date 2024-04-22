@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@hourglass/sdk": "https://github.com/pitch-foundation/hourglass-sdk.git#cedca2eed86f3257b3fdc684272ecaf590894cce"
+    "@hourglass/sdk": "https://github.com/pitch-foundation/hourglass-sdk.git#0bb7d431261c557d5fe2101c135061164ca6fad4",
+    "tsx": "^4.7.2"
   },
   "keywords": [],
   "author": "",
