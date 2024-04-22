@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hourglass/sdk": "https://github.com/pitch-foundation/hourglass-sdk.git#0bb7d431261c557d5fe2101c135061164ca6fad4",
+    "dotenv": "^16.4.5",
     "tsx": "^4.7.2"
   },
   "keywords": [],

@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import {
   AuthTakerProtocolUser,
   OrderExecutor,
@@ -10,7 +12,7 @@ import {
 
 const auth: AuthTakerProtocolUser = {
   source: "ION_PROTOCOL",
-  secret: "a43f968870b4ee61139e2be26a14c298e74ee0659345455de0cbd3c2a42d8c77",
+  secret: process.env.HOURGLASS_SECRET || "",
 };
 const serverUrl = "wss://api-origin-staging-v2.hourglass.com/taker";
 const wstETHAddress = "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0";
@@ -18,7 +20,6 @@ const weETHAddress = "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee";
 const baseAmount = "2000000000000000000"; // 2 ETH
 
 const takerProvider = new TakerProvider({ debug: true });
-console.log(takerProvider);
 
 takerProvider.connect({
   auth,
